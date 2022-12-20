@@ -1,16 +1,21 @@
+/** 1.example--------------------------------------- */
+
+import "./App.css";
 function App() {
+  let mystyle = { color: "red", background: "green" };
+
   return (
     <div>
-      <img src="https://picsum.photos/400" alt="" />
-      <h1>Person Name </h1>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea ab ratione
-        autem recusandae qui nemo maxime voluptatibus numquam quia error.
-        Repellat porro perferendis autem itaque perspiciatis, corrupti deleniti
-        maiores praesentium?
-      </p>
+      {/*here we have to change class into class name */}
+
+      <h1 className="butify">Badal !</h1>
+
+      <h1 style={mystyle}>hi</h1>
+
+      {/* we can write js in {{}} outer is for js internal is for object literal*/}
+
+      <h1 style={{ color: "red", backgroungColor: "purple" }}>HEllo World</h1>
     </div>
   );
 }
-
 export default App;
